@@ -7,4 +7,4 @@ aufgrund der Corona-Pandemie findet die Übung für Softwareentwicklung zur Vorl
 ## Inhalte
 Datum | Thema | Materialien
 --- | --- | ---
-20.04.2020 | GitHub und Markdown, Entwicklungsumgebung | <ul><li>[Aufgabe 0](https://github.com/ComputerScienceLecturesTUBAF/SoftwareentwicklungSoSe2020_Aufgabe_00)</li><li>[Aufgabe 1](https://github.com/ComputerScienceLecturesTUBAF/SoftwareentwicklungSoSe2020_Aufgabe_01)</li><li>[Classroom](https://classroom.github.com/g/7PtFgs9W)</li></ul>
+20.04.2020 | GitHub und Markdown, Entwicklungsumgebung | <ul><li>[Aufgabe 0](https://github.com/ComputerScienceLecturesTUBAF/SoftwareentwicklungSoSe2020_Aufgabe_00)</li><li>[Aufgabe 1](https://github.com/ComputerScienceLecturesTUBAF/SoftwareentwicklungSoSe2020_Aufgabe_01)</li><li>[Classroom](https://classroom.github.com/g/7PtFgs9W)</li><li>[Mein Fork für die Aufgabe 0](https://github.com/JayTee42/SoftwareentwicklungSoSe2020_Aufgabe_00)</li></ul>
