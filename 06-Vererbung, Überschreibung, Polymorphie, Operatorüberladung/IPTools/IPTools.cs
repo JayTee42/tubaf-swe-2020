@@ -53,7 +53,7 @@ static class IPTools
 
 		for (int i = 0; i < 8; i++)
 		{
-			components[i] = ((ushort)(address[2 * i] << 8) | (ushort)address[(2 * i) + 1]).ToString("x4");
+			components[i] = ((address[2 * i] << 8) | address[(2 * i) + 1]).ToString("x4");
 		}
 
 		return string.Join(":", components);
