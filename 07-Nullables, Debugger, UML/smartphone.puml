@@ -1,0 +1,100 @@
+@startuml
+abstract class Smartphone
+{
+    + PhoneNumber: string << get >>
+    + makeACall(phoneNumber: string)
+    + receiveACall(incomingNumber: string)
+    + {abstract} getOS(): string
+}
+
+enum PhoneState
+{
+    on,
+    off,
+    unknown
+}
+
+Smartphone "<< get >>" *--> PhoneState
+
+enum ConnectionState
+{
+    connected,
+    offline
+}
+
+Smartphone "<< get >>" *--> ConnectionState
+
+interface Credential
+{
+    + Username: string << get >>
+    + Password: string << get >>
+}
+
+class AppleID {}
+AppleID ..|> Credential
+
+class GoogleAccount {}
+GoogleAccount ..|> Credential
+
+Smartphone -- Credential
+
+abstract class Store
+{
+   + AppList: App[] << get >>
+   + ManagePayment()
+   + {abstract} ChargeDeveloper()
+}
+
+class AppStore
+{
+   + ChargeDeveloper() << override >>
+}
+
+AppStore --|> Store
+
+class PlayStore
+{
+   + ChargeDeveloper() << override >>
+}
+
+PlayStore --|> Store
+
+Smartphone -- Store
+
+class ApplePhone
+{
+   + getOS(): string << override >>
+}
+
+ApplePhone --|> Smartphone
+
+abstract class AndroidPhone
+{
+   + getOS(): string << override >>
+   + {abstract} RunVendorSpecificLocalization()
+}
+
+AndroidPhone --|> Smartphone
+
+class SonyPhone
+{
+   + RunVendorSpecificLocalization() << override >>
+}
+
+SonyPhone --|> AndroidPhone
+
+class NokiaPhone
+{
+   + RunVendorSpecificLocalization() << override >>
+}
+
+NokiaPhone --|> AndroidPhone
+
+ApplePhone -- AppleID
+ApplePhone -- AppStore
+
+AndroidPhone -- GoogleAccount
+AndroidPhone -- PlayStore
+
+hide empty members
+@enduml
