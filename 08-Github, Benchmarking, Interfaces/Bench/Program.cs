@@ -50,21 +50,21 @@ class Program
 		}
 	}
 
-	static void ArrayListInsert(ArrayList arr)
+	static void ArrayListInsert(ArrayList arrList)
 	{
 		for (int i = 0; i < _count; i++)
 		{
-			arr.Add(i);
+			arrList.Add(i);
 		}
 	}
 
-	static void ArrayListDelete(ArrayList arr)
+	static void ArrayListDelete(ArrayList arrList)
 	{
 		for (int i = 0; i < (_count / 2); i++)
 		{
 			if ((i % 10) == 0)
 			{
-				arr.RemoveAt(i);
+				arrList.RemoveAt(i);
 			}
 		}
 	}
@@ -108,13 +108,13 @@ class Program
 
 		// ArrayList:
 		watch = Stopwatch.StartNew();
-		var arr_list = new ArrayList();
-		ArrayListInsert(arr_list);
+		var arrList = new ArrayList();
+		ArrayListInsert(arrList);
 		elapsed = watch.ElapsedTicks;
 		Console.WriteLine($"ArrayList (insert): { elapsed } ticks");
 
 		watch = Stopwatch.StartNew();
-		ArrayListDelete(arr_list);
+		ArrayListDelete(arrList);
 		elapsed = watch.ElapsedTicks;
 		Console.WriteLine($"ArrayList (delete): { elapsed } ticks");
 	}
