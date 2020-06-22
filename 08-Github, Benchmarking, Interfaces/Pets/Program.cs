@@ -6,7 +6,7 @@ class Program
 	{
 		Console.WriteLine("Hello zoo!");
 
-		var my_zoo = new Pet[]
+		var myZoo = new Pet[]
 		{
 			new Cat(),
 			new Cat(),
@@ -16,7 +16,7 @@ class Program
 			new PersianCat(),
 		};
 
-		foreach (var pet in my_zoo)
+		foreach (var pet in myZoo)
 		{
 			Console.WriteLine($"I am a { pet }.");
 
@@ -35,11 +35,11 @@ class Program
 			// Does not throw, but returns null
 			// (dynamic cast)
 			// I like this more because of performance (one instead of two typechecks)!
-			var strokeable_pet = pet as IStrokeable;
+			var strokeablePet = pet as IStrokeable;
 
-			if (strokeable_pet != null)
+			if (strokeablePet != null)
 			{
-				strokeable_pet.Stroke();
+				strokeablePet.Stroke();
 			}
 			else
 			{
