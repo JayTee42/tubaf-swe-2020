@@ -1,4 +1,15 @@
 # Modul "Softwareentwicklung" 2020 (TUBAF)
+## Klausur
+Ein paar Informationen zur Klausur (auch [auf OPAL](https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/19948929024/CourseNode/102065948612785) verfügbar):
+ - Datum: 11. August, 13:30 Uhr - 15:30 Uhr (2 Stunden Zeit)
+ - Ort: Alte Mensa
+ - Erlaubte Unterlagen: Ein beidseitig beschriebenes oder bedrucktes A4-Blatt
+ - Weiterhin benötigt:
+    - Studierendenausweis
+    - Gelesenes, ausgedrucktes und unterschriebenes [Formular](https://tu-freiberg.de/sites/default/files/media/studium-an-der-tu-bergakademie-freiberg-2378/formblatt_belehrung_pruefung.pdf) zu den Corona-Hygieneregeln
+
+Ich wünsche Euch viel Erfolg für die Klausur :) und stehe natürlich weiterhin per Mail für Fragen zur Verfügung.
+
 ## Ablauf
 Liebe Übungsteilnehmer/-innen,
 
